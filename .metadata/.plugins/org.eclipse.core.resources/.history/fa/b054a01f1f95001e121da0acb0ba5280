@@ -1,0 +1,15 @@
+package dev.zachbaker.eecs1030.lab12;
+
+public class ShapeCalculator {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void Calculate_circle() {
+		
+	}
+	
+	public static void Calculate_pyramid() {
+		
+	}
+}

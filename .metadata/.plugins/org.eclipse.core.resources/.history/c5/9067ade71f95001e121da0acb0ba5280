@@ -1,0 +1,42 @@
+package dev.zachbaker.eecs1030.lab12;
+
+import java.util.Scanner;
+
+public class ShapeCalculator {
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.println("Type C for circle or P for pyramid");
+		char c = (char) scnr.nextByte();
+
+		if (c == 'C' || c == 'c') {
+			Calculate_circle(scnr);
+		} else if (c == 'P' || c == 'p') {
+			Calculate_pyramid(scnr);
+		} else {
+			System.out.println("Invalid Selection");
+		}
+	}
+	
+	public static void Calculate_circle(Scanner scnr) {
+		System.out.print("Please enter the radius of the circle: ");
+		double radius = scnr.nextDouble();
+		
+		double circumference = 2 * Math.PI * radius;
+		
+		System.out.printf("Circumference: %.2f", circumference);
+	}
+	
+	public static void Calculate_pyramid(Scanner scnr) {
+		System.out.print("Please enter the length of the pyramid: ");
+		double length = scnr.nextDouble();
+		
+		System.out.print("Please enter the width of the pyramid: ");
+		double width = scnr.nextDouble();
+		
+		System.out.print("Please enter the height of the pyramid: ");
+		double height = scnr.nextDouble();
+		
+		
+	}
+}

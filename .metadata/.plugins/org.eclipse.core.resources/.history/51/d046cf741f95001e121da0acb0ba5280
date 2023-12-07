@@ -1,0 +1,28 @@
+package dev.zachbaker.eecs1030.lab12;
+
+import java.util.Scanner;
+
+public class ShapeCalculator {
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.println("Type C for circle or P for pyramid");
+		char c = (char) scnr.nextByte();
+
+		if (c == 'C' || c == 'c') {
+			
+		} else if (c == 'P' || c == 'p') {
+			
+		} else {
+			System.out.println("Invalid Selection");
+		}
+	}
+	
+	public static void Calculate_circle() {
+		
+	}
+	
+	public static void Calculate_pyramid() {
+		
+	}
+}

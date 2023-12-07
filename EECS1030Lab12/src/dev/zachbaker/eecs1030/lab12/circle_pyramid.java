@@ -37,8 +37,10 @@ public class circle_pyramid {
 		System.out.print("Please enter the height of the pyramid: ");
 		double height = scnr.nextDouble();
 		
+		double baseArea = (length * width);
 		double volume = (length * width * height) / 3.0;
 		
+		System.out.printf("Base Area: %.2f%n", baseArea);
 		System.out.printf("Volume: %.2f%n", volume);
 	}
 }
